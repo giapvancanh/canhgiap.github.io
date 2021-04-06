@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="btn__open-modal" id="openModal">
+        <div class="btn__login">Đăng nhâp hê thống</div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal__overlay">
+
+        </div>
+
+        <div  class="modal__body">
+            <div class="close-form">     
+                <svg class="close-icon" id="closeModal" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+            </div>
+            <div class="modal__header">
+                <span>Member Login</span>
+            </div>
+            <div class="modal__content">
+                <div class="form">
+                    <div class="form__group">                  
+                        <svg class="input-icon user-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" class="svg-inline--fa fa-user fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>
+                        <input type="text" class="form__input" id="username" placeholder="Username" required >
+                    </div>
+                    <div class="form__group">                  
+                        <svg class="input-icon lock-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lock" class="svg-inline--fa fa-lock fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z"></path></svg>
+                        <input  type="password" class="form__input" id="password" placeholder="Password" required>
+                    </div>
+                    <div class="form__control">
+                        <button type="submit" class="btn-login" id="btnLogin" >
+                            <span class="btn__label">Login</span>
+                            <div class="loader"></div>
+                        </button>
+                    <p class=" warning warning__error">Tài khoản hoặc mật khẩu không đúng!</p>
+                    <p class="warning warning__user">Bắt buộc nhập username!</p>
+                    <p class="warning warning__password">Bắt buộc nhập password!</p>
+
+                    </div>
+                </div>
+                <div class="form__forgot">
+                    <a href="">Forgot Password?</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
